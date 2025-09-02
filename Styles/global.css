@@ -12,6 +12,16 @@ body{
   background-color: #00050A;
 }
 
+
+.container{
+  border: 1px solid blue;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 160px;
+  padding-right: 160px;
+  box-sizing: border-box;
+}
 :root{
 
   /* colors */
@@ -47,7 +57,7 @@ body{
   --subtittle:500 2rem/normal var(--ff-base);
 
   --body-lg:400 1.25rem/1.4 var(--ff-base) ;
-  --body-md:400 1rem/1.4 var(--ff-base);
+  --body-md:200 1rem/1.4 var(--ff-base);
   --body-sm:400 .875rem/1.4 var(--ff-base);
   --body-xs:400 .75rem/1.4 var(--ff-base);
 

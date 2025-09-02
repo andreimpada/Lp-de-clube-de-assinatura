@@ -1,0 +1,98 @@
+.main-book{
+    border: 3px solid orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14rem;
+    margin-bottom: 5.5rem;
+
+    & div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+   & img{
+    width: 32px;
+    height: 32px;
+   }
+
+   & h2{
+    font: var(--tittle-sm);
+    color: var(--text-title);
+   }
+
+   & p{
+    font:var(--body-md);
+    color: var(--text-body);
+   }
+    
+}
+
+.animation-book{
+    width:1120px;
+    height: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;    
+
+   .main{
+     position: relative;
+     width: 400px;
+     height: 500px;
+     z-index: 1;
+   }
+
+   .extra{
+    position: absolute;
+    height: 450px;
+    left: 52%;
+   }
+
+    .extra-2{
+    position: absolute;
+    height: 450px;
+    left: 52%;
+   }
+   
+   .extra-3{
+    position: absolute;
+    height: 200px;
+   }
+
+   .extra-4{
+    width: 130px;
+    position: absolute;
+   }
+}
+
+
+.animation-book:hover .extra{
+    animation: moveout 100ms forwards;
+}
+
+.animation-book:hover .extra-2{
+    animation: moveout-2 100ms forwards;
+}
+
+.animation-book:hover .extra-2{
+
+}
+.animation-book:hover .extra-3{
+
+}
+
+
+@keyframes moveout{
+from{transform: translate(0,0);}
+to{transform: translate(220px,-20px) rotate(22deg);}
+}
+
+@keyframes moveout-2{
+from{transform: translate(0,0);}
+to{transform: translate(125px,-100px) rotate(10deg);}
+}
