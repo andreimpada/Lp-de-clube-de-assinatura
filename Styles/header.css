@@ -64,8 +64,14 @@ header{
 }
 
 .hero-main{
+  border: 3px solid green;
+  height: 400px;
+  max-width: 1400px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0 auto;
 
-  & .container{
+  & div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,31 +84,29 @@ header{
 
     & img{
       width: 72px;
-      height: 72px; 
+      height: 72px;
+      position: absolute;
     }
 
     & img[src*="book"]{
       opacity: 0;
-      position: absolute;
-      top: 30%;
+      top: 29%;
       left: 46%;
-      rotate: 15deg;
+      transform: rotate(15deg);
     }
 
     & img[src*="ouija"]{
       opacity: 0;
-      position: absolute;
-      left:10%;
-      bottom: 5%;
-      rotate: 100deg;  
+      left:5%;
+      bottom: 8%;
+      transform: rotate(100deg);  
     }
 
     & img[src*="ball"]{
       opacity: 0;
-      position: absolute;
-      right:10%;
-      bottom: 5%;
-      rotate: -15deg;
+      right:5%;
+      bottom: 8%;
+      transform: rotate(-15deg);
     }
 
     & p{
@@ -162,7 +166,7 @@ header{
     animation: appears 100ms 1.5s both;
     
    &:hover {
-    transform: rotate(5deg);
+    transform: rotate(115deg);
    }
   }
 
@@ -192,3 +196,4 @@ header{
 100%{color:var(--blue-light);}
 }
   
+
