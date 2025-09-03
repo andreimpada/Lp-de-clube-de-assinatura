@@ -85,6 +85,14 @@
 
   }
 
+  & .bunny{
+    position: absolute;
+    top: -50px;
+    left: 35px;
+
+  }
+
+
   & .miniheader{
     & p{
       color: var(--pink-light);
