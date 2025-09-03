@@ -3,11 +3,74 @@ footer{
     height: 415px;
     background-image: url(/Assets/book-trace-background.png);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     
+}
+
+.ft-left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 264px;
+    height: 130px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--shape-stroke);
+    padding-top: 12px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: background-color 0.3s;   
+        cursor: pointer;
+    }
+
+    a:hover{
+        background-color: var(--blue-base);
+
+        & svg{
+            color: var(--text-body);
+        }
+        
+    }
+
+    a svg{
+        color: var(--blue-base);
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.ft-right{
+    display: flex;
+    gap: 56px;
+}
+
+.pocket{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & h3{
+        font: var(--tittle-xs);
+        color: var(--text-body);
+    }
+
+    & a{
+        font:var(--link) ;
+        color: var(--blue-light);
+        cursor: pointer;
+    }
 }

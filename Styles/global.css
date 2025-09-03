@@ -21,7 +21,6 @@ body{
 }
 
 .container{
-  border: 1px solid blue;
   width: 100%;
   min-width: 1200px;
   margin: 0 auto;
