@@ -1,8 +1,14 @@
 .sales-wrapper{
+  background-image: url(/Assets/pricing-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  
 
 
 
@@ -10,18 +16,18 @@
     text-align: center;
     font: var(--tittle-sm);
     color: var(--text-title);
+    margin-bottom: 56px;
   }
   
   
   & .wrapper{
+    border: 1px solid green;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 1050px;
     height: 606px;
-
-
   }
 }
 
@@ -153,5 +159,64 @@
 
 }
 
+.banner-left{
+  transform: rotate(-8deg);
+  transition: 
+  background-color 0.6s ease,
+  transform 0.6s ease;
 
+  &:hover{
+    background-color: var(--shape-hover);
+    z-index:1;
+    transform:scale(1.1) rotate(-8deg);
+    box-shadow: 0 10px 25px rgba(92, 91, 91, 0.15);
+  }
+}
+.banner-right{
+  transform: rotate(8deg);
+  transition: 
+  background-color 0.6s ease,
+  transform 0.6s ease;
+  &:hover{
+    background-color: var(--shape-hover);
+    z-index:1;
+    transform:scale(1.1) rotate(8deg);
+    box-shadow: 0 10px 25px rgba(92, 91, 91, 0.15);
+  }
+}
+ /* .banner-mid{
+  transform:translateY(-60px);
+  transition: 
+  background-color 0.6s ease,
+  transform 0.6s ease;
+  &:hover{
+    background-color: var(--shape-hover);
+    z-index:1;
+    transform:scale(1.1) translateY(-60px);;
+    box-shadow: 0 10px 25px rgba(92, 91, 91, 0.15);
+  }
+ } */
 
+ .banner-mid {
+  background-color: var(--shape-hover);
+  transform: translateY(-60px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(92, 91, 91, 0.15);
+  z-index: 1;
+  transition: all .6s ease;
+
+ 
+}
+
+.wrapper:hover .banner-mid{
+  background-color: var(--shape-base);
+  transform: translateY(-60px) scale(1);
+  box-shadow: none;
+  z-index: 0;
+}
+
+.wrapper:hover .banner-mid:hover {
+  background-color: var(--shape-hover);
+  transform: translateY(-60px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(92, 91, 91, 0.15);
+  z-index: 1;
+}
