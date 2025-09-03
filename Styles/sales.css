@@ -1,13 +1,36 @@
 .sales-wrapper{
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
+  width: 100%;
+  height: 1440px;
+
+
+   & .tops{
+    text-align: center;
+    font: var(--tittle-sm);
+    color: var(--text-title);
+  }
+  
+  
+  & .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1050px;
+    height: 606px;
+
+
+  }
 }
+
 
 .banner{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--shape-base);
   width: 288px;
   height: 416px;
@@ -15,13 +38,52 @@
   border-radius: 24px;
   padding: 32px 32px 28px 32px;
 }
+.banner-2{
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--shape-base);
+  width: 288px;
+  height: 416px;
+  border: 1px solid var(--shape-stroke);
+  border-radius: 24px;
+  padding: 32px 32px 28px 32px;
+
+  & .popular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    background-color: var(--shape-stroke);
+    right: 10%;
+    top: 7%;
+    border-radius: 16px;
+
+  }
+
+  & .miniheader{
+    & p{
+      color: var(--pink-light);
+    }
+  }
+
+  & .beneficios{
+    & a{
+      background-color: var(--pink-dark);
+    }
+  }
+}
 
 .miniheader{
   width: 224px;
   height: 118px;
   display: flex;
   flex-direction:column;
-  margin-bottom: 90px;
   
   & p{
     font: var(--tittle-xs);
@@ -51,7 +113,21 @@
   width: 100%;
   display: flex;
   flex-direction:column;
-  margin-bottom: 90px;
+  gap: 12px;
+
+  .beneficios-wrapper{
+    & span{
+    font:var(--body-xs);
+    color: var(--text-body);
+    margin-bottom: 12px;
+    margin-left: 3px;
+    }
+
+    svg{
+      width: 14px;
+      height: 14px;
+    }
+  }
 
   & span{
     font:var(--body-xs);
@@ -59,11 +135,9 @@
     margin-bottom: 12px;
     }
 
-  & span:nth-child(3){
-    margin-bottom: 24px;
-  }
 
   & a{
+    margin-top: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,3 +152,6 @@
   }
 
 }
+
+
+
