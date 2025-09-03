@@ -12,7 +12,13 @@ body{
   background-color: #00050A;
 }
 
+.column-reverse{
+  flex-direction: column-reverse;
+}
 
+.column{
+  flex-direction: column;
+}
 
 .container{
   border: 1px solid blue;
