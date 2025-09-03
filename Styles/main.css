@@ -7,6 +7,7 @@
     margin-top: 14rem;
     margin-bottom: 5.5rem;
 
+
     & div{
         display: flex;
         flex-direction: row;
@@ -46,6 +47,15 @@
      width: 400px;
      height: 500px;
      z-index: 1;
+   }
+
+   .blur{
+    position: absolute;
+    background-color: var(--pink-low);
+    width: 930px;
+    height: 930px;
+    border-radius: 50%;
+    filter: blur(300px);
    }
 
    .extra-1{
@@ -238,3 +248,5 @@
     transform: translate(290px,270px); 
   } 
 }
+
+
