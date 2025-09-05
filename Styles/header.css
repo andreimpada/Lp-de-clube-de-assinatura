@@ -5,6 +5,7 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation: appears 5s ease both;
 
   
   .container{
@@ -51,16 +52,21 @@ header{
         font: var(--tittle-lg);
         color: var(--text-title);
         text-align: center;
+        animation: appears 4s ease both;
       }
 
       & p{
         font: var(--body-lg);
         color: var(--text-body);
         text-align: center;
+        animation: appears 4s 1s ease both;
       }
     }
 
   }
+
+
+
 }
 
 .hero-main{
@@ -194,5 +200,3 @@ header{
 0%{ color:#7f7f80;}
 100%{color:var(--blue-light);}
 }
-  
-
