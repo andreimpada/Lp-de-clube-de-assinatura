@@ -74,3 +74,10 @@ footer{
         cursor: pointer;
     }
 }
+
+.pocket:hover{
+
+    & a{
+        color: var(--text-body);
+    }
+}
