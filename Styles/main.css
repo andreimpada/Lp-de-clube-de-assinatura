@@ -27,6 +27,7 @@
    & p{
     font:var(--body-md);
     color: var(--text-body);
+    transform: translateY(-20px);
    }
     
 }

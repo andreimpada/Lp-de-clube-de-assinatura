@@ -181,6 +181,7 @@
 }
 
 .banner-left{
+  opacity: 0;
   transform: rotate(-8deg);
   transition: 
   background-color 0.6s ease,
@@ -217,7 +218,7 @@
 }
 
 .banner-right{
-  transform: rotate(8deg);
+  opacity:0;
   transition: 
   background-color 0.6s ease,
   transform 0.6s ease;
@@ -266,7 +267,19 @@
   background-color: var(--shape-base);
   transform: translateY(-60px) scale(1);
   box-shadow: none;
-  z-index: 0;
+  z-index: 0;  
+}
+
+.wrapper:hover .banner-left{
+  animation: hiding 1s ease both;
+  opacity:1;
+
+}
+
+.wrapper:hover .banner-right{
+  animation: hiding2 1s ease both;
+  opacity:1;
+
 }
 
 .wrapper:hover .banner-mid:hover {
@@ -275,3 +288,15 @@
   box-shadow: 0 10px 25px rgba(92, 91, 91, 0.15);
   z-index: 1;
 }
+
+
+@keyframes hiding{
+  0%{transform: translate(300px,-50px);}
+  100%{transform: translate(0px,0px) rotate(-8deg);}
+}
+
+@keyframes hiding2{
+  0%{transform: translate(-280px,-50px) rotate(8deg);} 
+  100%{transform: translate(0px,0px) rotate(8deg);} 
+}
+
