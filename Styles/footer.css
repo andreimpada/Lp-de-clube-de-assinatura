@@ -72,12 +72,10 @@ footer{
         font:var(--link) ;
         color: var(--blue-light);
         cursor: pointer;
+
+        &:hover {
+        color: var(--text-body);    
+        }
     }
 }
 
-.pocket:hover{
-
-    & a{
-        color: var(--text-body);
-    }
-}
